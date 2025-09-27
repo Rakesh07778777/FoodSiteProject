@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+:root{
+    --text-color : #3b2f2f;
+    --second-txt: #1a1a1a;
+    --btn-bg:#d4af37;
+    --seconday-btn:#2c0e37;
+}
+
 html,body{
     width: 100%;
     height: 100%;
-    background: #000;
-
+    background: #f5e6d3;
+     font-family: "Playfair Display", serif;
+     scroll-behavior: smooth;
 }
 
 
@@ -26,8 +37,8 @@ html,body{
     justify-content: space-between;
     align-items: center;
     min-width: 90%;
-    color: floralwhite;
-    background: #101010;
+    /* color: floralwhite; */
+     background: #f5e6d3;
     border-radius: 12px;
     padding: 0.6rem 1rem;
 }
@@ -52,21 +63,35 @@ nav ul li::after{
     bottom: -5px;
     width: 0%;
     height: 2px;
-    background-color: #d5d5d5;
+    background-color: var(--btn-bg);
     border-radius: 2px;
     transition: width 0.3s ease;
 }
 
 nav ul li:hover{
-    color: #9d9d9d;
+    color: #000000;
 }
 nav ul li:hover::after{
     width: 100%;
 }
 
+
+
+.buttons button{
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 12px;
+    /* color: white; */
+    background-color: var(--btn-bg);
+}
+
+
+/* Cpntents */
+
 .feature-yellow{
    grid-area: fyellow;
-   color: white;
+   transition: transform 0.3s ease;
+   /* color: white; */
    
 }
 
@@ -79,7 +104,8 @@ nav ul li:hover::after{
 
 .feature-purple{
      grid-area: fpurple;
-   color: white;
+   color: rgb(0, 0, 0);
+   transition: transform 0.3s ease;
 }
 .feature-purple img{
     height: 340px;
@@ -87,15 +113,11 @@ nav ul li:hover::after{
    border-radius: 12px 12px 0 0;
     object-fit: cover;
 }
-.feature-red{
-    background-color: red;
-     grid-area: fred;
-   color: white;
-}
 
 .image1{
     grid-area: image1;
-   color: white;
+    transition: transform 0.3s ease;
+   /* color: white; */
 }
 
 .image1 img{
@@ -109,7 +131,8 @@ nav ul li:hover::after{
 .image2{
     grid-area: image2;
      display: flex;
-   color: white;
+     transition: transform 0.3s ease;
+   /* color: white; */
 }
  .image2 img{
     height: 340px;
@@ -121,7 +144,7 @@ nav ul li:hover::after{
 
 
  .heading{
-    color: white;
+    color: rgb(0, 0, 0);
     grid-area: headings;
     display: flex;
      justify-content: 
@@ -135,7 +158,7 @@ nav ul li:hover::after{
  .heading p{
     font-size: 1rem;
     margin-top: 0.5rem;
-    color: rgb(183, 183, 183);
+    color: rgb(0, 0, 0);
  }
 
 main{
@@ -160,45 +183,213 @@ main{
     position: relative; /* 👈 important */
 }
 
-/* .overlay{
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-} */
-
 
 .overlay {
     position: absolute;
-    bottom: -9%;
+    bottom: -12%;
     width: 100%;
     padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.1); 
+    background: #e89e3d48; 
     backdrop-filter: blur(10px);           
     -webkit-backdrop-filter: blur(10px);
     border-radius: 0 0 12px 12px;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     line-height: 1.4rem;
+    line-height: 30px;
 
-    /* transform: translateY(100%); 
-    transition: transform 0.4s ease; */
 }
 
 .overlay h3{
     font-size: 1rem;
-    color: rgb(214, 214, 214);
+    color: rgb(5, 5, 5);
 }
 .overlay p{
-    font-size: 0.9rem;
-    color: rgb(177, 177, 177);
+    font-size: 0.8rem;
+    /* color: rgb(177, 177, 177); */
 }
 
 .overlay button{
     border: none;
-    padding: 0.5rem 0.4rem;
+    padding: 0.5rem 0.8rem;
     border-radius: 12px;
-    color: white;
-    background-color: rgb(78, 78, 78);
+    /* color: white; */
+    background-color: var(--btn-bg);
+}
+
+
+.image2:hover
+{
+   transform: translateY(-10px);
+}
+.image1:hover
+{
+   transform: translateY(-10px);
+}
+.feature-yellow:hover
+{
+   transform: translateY(-10px);
+}
+.feature-purple:hover
+{
+   transform: translateY(-10px);
+}
+
+/* Section -----------> */
+.why-choose-us {
+  text-align: center;
+  padding: 60px 20px;
+  background: #faf7f2; /* Soft, premium background */
+}
+
+.why-choose-us h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-8px); /* Hover effect */
+}
+
+.feature img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.f-fade{
+    animation: bottomUp both;
+    animation-timeline: view();
+}
+
+@keyframes bottomUp{
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+h3.opacity{
+    animation: textUp ;
+    animation-timeline: view();
+}
+@keyframes textUp{
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+/* Third section */
+
+.quick-feature{
+    padding: 6rem 2rem;
+   
+}
+.quick-feature h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #2d2d2d;
+  margin-bottom: 3rem;
+}
+
+.all-features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 80%; */
+}
+.feature-content{
+    width: 268px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.feature-content img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.feature-content h3{
+   font-family: 'Lora', serif;
+  color: #363636;
+  margin: 15px 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.feature-content p{
+   font-family: 'Lora', serif;
+  color: #4a4a4a;
+  padding: 0 15px 15px 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fadUp{
+    animation: fadingUp both;
+    animation-timeline: view();
+}
+
+@keyframes fadingUp{
+    from{
+        opacity: 0;
+        translate: 0 4rem;
+        filter: saturate(0) contrast(4) brightness(.1) blur(5px);
+        scale: .95;
+    }
+    to{
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
 }
 
 /* @media screen and (max-width : 1023px ) {
