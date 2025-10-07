@@ -22,6 +22,16 @@ body {
     font-family: "Playfair Display", serif;
     scroll-behavior: smooth;
 }
+/* body{
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  mask-image: url(/Food-Project/images/ink_lv1.png);
+  z-index: 999;
+} */
 
 
 
@@ -143,6 +153,7 @@ nav ul li:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .logo .social-media img{
     height: 100%;
@@ -255,9 +266,10 @@ main {
         "   fyellow     image1  image2       fpurple "
     ;
     row-gap: 15px;
-    /* align-items: center; */
     justify-items: center;
 }
+
+
 
 .feature-yellow,
 .feature-purple,
