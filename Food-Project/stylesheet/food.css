@@ -147,57 +147,11 @@ nav ul li:hover::after {
     background-color: var(--btn-bg);
 }
 
-
-/* Contents */
-
-.feature-yellow {
-    transition: transform 0.3s ease;
-
+main {
+  width: 100%;
+  min-height: 100vh;
 }
 
-.feature-yellow img {
-    height: 340px;
-    width: 300px;
-    border-radius: 12px 12px 0 0;
-    object-fit: cover;
-}
-
-.feature-purple {
-    color: rgb(0, 0, 0);
-    transition: transform 0.3s ease;
-}
-
-.feature-purple img {
-    height: 340px;
-    width: 300px;
-    border-radius: 12px 12px 0 0;
-    object-fit: cover;
-}
-
-.image1 {
-    transition: transform 0.3s ease;
-}
-
-.image1 img {
-    height: 340px;
-    width: 300px;
-    border-radius: 12px 12px 0 0;
-    object-fit: cover;
-}
-
-
-.image2 {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.image2 img {
-    height: 340px;
-    width: 300px;
-    aspect-ratio: 1/1;
-    border-radius: 12px 12px 0 0;
-    object-fit: cover;
-}
 
 
 .heading {
@@ -236,30 +190,87 @@ nav ul li:hover::after {
     color: rgb(0, 0, 0);
 }
 
-main {
-  width: 100%;
-  min-height: 100vh;
-}
+
+
+/* Contents */
+
 
 .main-container{
   display: flex;
   gap: 1.4rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
-
 
 .feature-yellow,
 .feature-purple,
 .image1,
 .image2 {
     position: relative;
+
+}
+
+.feature-yellow {
+    transition: transform 0.3s ease;
+
+}
+
+.feature-yellow img {
+    height: 340px;
+    width: 300px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.feature-purple {
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.feature-purple img {
+    height: 340px;
+    width: 300px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.image1 {
+    transition: transform 0.3s ease;
+}
+
+.image1 img {
+    height: 340px;
+    width: 300px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+
+.image2 {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.image2 img {
+    height: 340px;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
 }
 
 
 .overlay {
     position: absolute;
-    bottom: -12%;
+    bottom: -20%;
     width: 100%;
     padding: 0.5rem;
     background: #e89e3d48;
@@ -294,19 +305,19 @@ main {
 }
 
 
-.image2:hover {
+.image2 img:hover {
     transform: translateY(-10px);
 }
 
-.image1:hover {
+.image1 img:hover {
     transform: translateY(-10px);
 }
 
-.feature-yellow:hover {
+.feature-yellow img:hover {
     transform: translateY(-10px);
 }
 
-.feature-purple:hover {
+.feature-purple img:hover {
     transform: translateY(-10px);
 }
 
