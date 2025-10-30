@@ -22,17 +22,6 @@ body {
     font-family: "Playfair Display", serif;
     scroll-behavior: smooth;
 }
-/* body{
-  position: relative;
-}
-body::before{
-  content: '';
-  position: absolute;
-  inset: 0;
-  mask-image: url(/Food-Project/images/ink_lv1.png);
-  z-index: 999;
-} */
-
 
 
 .header {
@@ -170,17 +159,15 @@ nav ul li:hover::after {
     border: none;
     padding: 0.5rem 0.8rem;
     border-radius: 12px;
-    /* color: white; */
     background-color: var(--btn-bg);
 }
 
 
-/* Cpntents */
+/* Contents */
 
 .feature-yellow {
     grid-area: fyellow;
     transition: transform 0.3s ease;
-    /* color: white; */
 
 }
 
@@ -207,7 +194,6 @@ nav ul li:hover::after {
 .image1 {
     grid-area: image1;
     transition: transform 0.3s ease;
-    /* color: white; */
 }
 
 .image1 img {
@@ -222,7 +208,6 @@ nav ul li:hover::after {
     grid-area: image2;
     display: flex;
     transition: transform 0.3s ease;
-    /* color: white; */
 }
 
 .image2 img {
@@ -241,7 +226,6 @@ nav ul li:hover::after {
     justify-content:
         center;
     align-items: center;
-    /* flex-direction: column; */
     gap: 33px;
 }
 
@@ -276,7 +260,6 @@ main {
 .image1,
 .image2 {
     position: relative;
-    /* 👈 important */
 }
 
 
@@ -289,7 +272,6 @@ main {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 0 0 12px 12px;
-    /* color: #fff; */
     text-align: center;
     line-height: 1.4rem;
     line-height: 30px;
@@ -303,14 +285,12 @@ main {
 
 .overlay p {
     font-size: 0.8rem;
-    /* color: rgb(177, 177, 177); */
 }
 
 .overlay button {
     border: none;
     padding: 0.5rem 0.8rem;
     border-radius: 12px;
-    /* color: white; */
     background-color: var(--btn-bg);
     cursor: pointer;
 }
@@ -341,7 +321,6 @@ main {
     text-align: center;
     padding: 60px 20px;
     background: #f5e6d3;
-    /* Soft, premium background */
 }
 
 .why-choose-us h2 {
@@ -356,7 +335,6 @@ main {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    /* Makes it responsive */
 }
 
 .feature {
@@ -370,7 +348,6 @@ main {
 
 .feature:hover {
     transform: translateY(-8px);
-    /* Hover effect */
 }
 
 .feature img {
@@ -522,16 +499,12 @@ main {
     gap: 30px;
     justify-content: center;
     height: 355px;
-    /* position: relative; */
-    /* align-items: center; */
-    /* height: 80%; */
 }
 
 .feature-content {
     width: 268px;
     background-color: #FFFFFF;
     border-radius: 12px;
-    /* position: absolute; */
 }
 
 .feature-content img {
@@ -588,34 +561,6 @@ main {
 
 
 
-/* @media screen and (max-width : 1023px ) {
-    main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px auto 150px 150px;
-        grid-template-areas: 
-        "  header         header"
-        "  fgreen         fgreen"
-        "  fblue           fyellow"
-        "  fred           fpurple"
-        ;
-    }
-    
-}
-@media screen and (max-width : 767px ) {
-    main{
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px auto repeat(4, 150px);
-        grid-template-areas: 
-        "  header"
-        "  fgreen"
-        "fyellow"
-        "fpurple"
-        "fred"
-        "fblue"
-        ;
-    }
-    
-} */
 
 
 
@@ -626,19 +571,7 @@ main {
 
 
 
-/*
-.item{
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.item-3{
-    background-color: bisque;
-    grid-row: 3;
-    grid-column: 4;
-    grid-area: 3 / 4 / 5 / 6 ; /* grid row begin / grid column begin / grid row end / grid column*/
 
 
 
